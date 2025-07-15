@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.c70b4cdc.css",
+    "main.js": "/portfolio/static/js/main.be3a3b4b.js",
+    "static/js/453.a5b25d5b.chunk.js": "/portfolio/static/js/453.a5b25d5b.chunk.js",
+    "static/media/myimg.png": "/portfolio/static/media/myimg.83257f514436d8ff1954.png",
+    "static/media/portfolio.png": "/portfolio/static/media/portfolio.7dbddec2d665a6570d39.png",
+    "static/media/react.png": "/portfolio/static/media/react.809fed23bcdd686de66e.png",
+    "static/media/python.png": "/portfolio/static/media/python.6a5cbc319ab3ddf8ef92.png",
+    "static/media/node-js.png": "/portfolio/static/media/node-js.e328955d6bbbf3ebc72b.png",
+    "static/media/git.png": "/portfolio/static/media/git.487f826d82a9051b921f.png",
+    "static/media/api.png": "/portfolio/static/media/api.287a3f88936ab7644263.png",
+    "static/media/resume.png": "/portfolio/static/media/resume.f3be767da3f691e175c7.png",
+    "static/media/Terraform.png": "/portfolio/static/media/Terraform.d78128057103f79511b7.png",
+    "index.html": "/portfolio/index.html",
+    "main.c70b4cdc.css.map": "/portfolio/static/css/main.c70b4cdc.css.map",
+    "main.be3a3b4b.js.map": "/portfolio/static/js/main.be3a3b4b.js.map",
+    "453.a5b25d5b.chunk.js.map": "/portfolio/static/js/453.a5b25d5b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c70b4cdc.css",
+    "static/js/main.be3a3b4b.js"
+  ]
+}
