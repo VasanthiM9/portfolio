@@ -1,24 +1,47 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar';
+import Home from './components/Navbar/Home';
+import About from './components/Navbar/About';
+import Experience from './components/Navbar/Experience';
+import Projects from './components/Navbar/Projects';
+import Skills from './components/Navbar/Skills';
+import Contact from './components/Navbar/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      <Main />
+    </Router>
+  );
+}
+
+function Main() {
+  const location = useLocation();
+
+  const isHome = location.pathname === '/' || location.pathname === '/portfolio-website' || location.pathname === '/home';
+
+  return (
+   
+    <>
+      <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/portfolio-website' element={<Home />} />
+      <Route path='/home' element={<Home />} />
+      <Route path='/about' element={<About />} />
+      <Route path='/experience' element={<Experience/>} />
+      <Route path='/projects' element={<Projects />} />
+      <Route path='/skills' element={<Skills />} />
+      <Route path='/contact' element={<Contact />} />
+      </Routes>
+
+      {isHome && <Footer />}
+      
+    </>
+   
   );
 }
 
