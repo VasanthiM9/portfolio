@@ -22,14 +22,14 @@ function App() {
 function Main() {
   const location = useLocation();
 
-  const isHome = location.pathname === '/' || location.pathname === '/portfolio-website' || location.pathname === '/home';
+  const isHome = location.pathname === '/' || location.pathname === '/portfolio' || location.pathname === '/home';
 
   return (
    
     <>
       <Routes>
       <Route path='/' element={<Home />} />
-      <Route path='/portfolio-website' element={<Home />} />
+      <Route path='/portfolio' element={<Home />} />
       <Route path='/home' element={<Home />} />
       <Route path='/about' element={<About />} />
       <Route path='/experience' element={<Experience/>} />
